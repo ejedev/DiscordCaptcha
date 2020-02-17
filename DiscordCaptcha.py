@@ -63,5 +63,5 @@ class Client(discord.Client):
 
 client = Client()
 #Set your token here
-client.run('')
+client.run('TOKEN_HERE')
 
