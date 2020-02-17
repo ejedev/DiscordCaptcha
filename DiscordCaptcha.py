@@ -14,7 +14,7 @@ class Client(discord.Client):
 
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
-        game = discord.Game("DM ?request to get set up.")
+        game = discord.Game("Captcha verification.")
         await client.change_presence(status=discord.Status.online, activity=game)
 
     def load_captchas(self):
@@ -35,7 +35,7 @@ class Client(discord.Client):
         self.save_catchas(captcha_list)
         file = "captcha_" + captchaValue + ".png"
         dmChannel = await member.create_dm()
-        await dmChannel.send("This server has enabled captcha verification. Please verify that you are a human by completing this challenge.\nReply with ?verify captchahere to verify your account.\nReply with ?new to get a new challenge.")
+        await dmChannel.send("**This server has enabled captcha verification.** Please verify that you are a human by completing this challenge.\n**Reply with ?verify captchahere** to verify your account.\n**Reply with ?new** to get a new challenge.")
         await dmChannel.send(file=discord.File(file))
         os.system("rm " + file)
 
@@ -64,3 +64,4 @@ class Client(discord.Client):
 client = Client()
 #Set your token here
 client.run('')
+
