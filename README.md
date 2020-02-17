@@ -6,6 +6,11 @@ Python module requirements available in `requirements.txt`
 
 Tested with Python 3.7 on Ubuntu 18.04.3
 
+# Features
+- Sets a user to a limited role upon joining the server.
+- DM's the user a captcha to solve to have the role removed.
+- Allows the user to request a new captcha if the current one is too hard.
+
 # Setup Instructions
 - Install the required modules from `requirements.txt`
 - Create a new application at https://discordapp.com/developers/applications
