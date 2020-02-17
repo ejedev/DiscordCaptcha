@@ -18,3 +18,14 @@ Tested with Python 3.7 on Ubuntu 18.04.3
 - Copy the limited role's ID and put it on line 11 of `DiscordCaptcha.py`
 - Copy your server's ID and put it on line 13 of `DiscordCaptcha.py`
 - Run `DiscordCaptcha.py`
+
+# Optional Config
+Feel free to modify anything in `CaptchaCreator.py` to change things like captcha length.
+
+# Known Issues
+- Creates a random captcha for some reason when the program first runs.
+- I have no idea what happens if a user has DM's disabled
+
+# Planned Features
+- Handling for user having DM's turned off.
+- Support for both Linux and Windows.
